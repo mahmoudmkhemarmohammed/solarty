@@ -1,0 +1,992 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #028c7e;
+  border-radius: 10px;
+}
+/* Start Gropping */
+header,
+.home .container .text .buttons button,
+.call-us .container .text button,
+footer .container .boxed .inputs button,
+footer .container .boxed .inputs input,
+.energy .container .card-tall .card .card-text {
+  padding: 15px;
+}
+body,
+.home .container .text .bar-box .bar,
+.friendliest .container .img,
+.slider-box .container .slide-container,
+footer .container .boxed .inputs,
+.button {
+  position: relative;
+}
+.container,
+.home .container .text,
+footer .container .boxed:last-child .text ul li {
+  padding: 0 10px;
+}
+header,
+.home .container .text .buttons button,
+.call-us .container .text button,
+.energy .container .text i,
+.button {
+  background-color: #009688;
+}
+header .container,
+header .container nav,
+.friendliest .container,
+.solar-kits .container .card-box,
+.energy .container,
+.our-values .container .container-card,
+.slider-box .container,
+footer .container .boxed {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav .spans span,
+header .container nav ul li,
+header .container nav .call,
+.home .container .text,
+.home .container .text .buttons button,
+.call-us .container .text button,
+.call-us .container .text,
+.repairs .container .text,
+.energy .container .text i,
+footer .container .boxed .text ul li,
+footer .container .boxed .inputs p,
+.button::before {
+  color: #fff;
+}
+/* End Gropping */
+/* Start Container */
+.container {
+  margin: 0 auto;
+}
+/* End Container */
+/* Start Header */
+header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000000000;
+}
+header .container {
+  align-items: center;
+  height: 100%;
+}
+header .container .logo {
+  width: 30%;
+}
+header .container .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+header .container nav {
+  align-items: center;
+  flex: 1;
+}
+header .container nav .spans {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+header .container nav .spans span {
+  background-color: #fff;
+  width: 90%;
+  height: 3px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header .container nav .spans span:nth-child(2) {
+  width: 50%;
+}
+header .container nav .spans:hover span {
+  width: 90%;
+}
+header .container nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+header .container nav ul .close {
+  display: none;
+}
+header .container nav ul li {
+  list-style: none;
+  font-size: 22px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+header .container nav ul li:hover,
+header .container nav ul li.active {
+  background-color: #028c7e;
+}
+header .container nav ul li.active {
+  border-bottom: 2px solid black;
+}
+header .container nav .call {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 5px;
+  width: 180px;
+  padding: 5px;
+  text-align: right;
+}
+header .container nav .call h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+header .container nav .call h3 {
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+/* End Header */
+/* Start Home */
+.home {
+  margin-top: 100px;
+  background-image: url(../assets/solar-panels-meadow\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+.home .container .text {
+  width: 60%;
+}
+.home .container .text .bar-box {
+  margin-bottom: 150px;
+  margin-left: 100px;
+}
+.home .container .text .bar-box .bar {
+  width: 50%;
+  height: 5px;
+  background-color: #00000018;
+  border-radius: 10px;
+  display: flex;
+}
+.home .container .text .bar-box .bar span {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #fff;
+  width: 40%;
+  height: 100%;
+}
+.home .container .text .bar-box .bar::before,
+.home .container .text .bar-box .bar::after {
+  position: absolute;
+  content: "01";
+  font-size: 18px;
+  top: -105%;
+}
+.home .container .text .bar-box .bar::before {
+  left: -34%;
+}
+.home .container .text .bar-box .bar::after {
+  content: "04";
+  right: -34%;
+}
+.home .container .text h2 {
+  font-size: 60px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.home .container .text p {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 2;
+  margin-bottom: 30px;
+  color: #e6e6e6;
+}
+.home .container .text .buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.home .container .text .buttons button,
+.call-us .container .text button {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  border-radius: 25px;
+  font-weight: 100;
+  cursor: pointer;
+}
+.home .container .text .buttons button:last-child,
+.call-us .container .text button {
+  width: 250px;
+  background-color: #ffc400;
+  color: #000;
+}
+/* End Home */
+/* Start Frindliest */
+.friendliest .container {
+  padding: 70px 0;
+  flex-wrap: wrap;
+}
+.friendliest .container .text {
+  width: 55%;
+}
+.friendliest .container .text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.friendliest .container .text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.friendliest .container .text .boxed h2 {
+  font-size: 24px;
+  color: #7bc800;
+}
+.friendliest .container .text .boxed h2 span {
+  color: #000;
+}
+.friendliest .container .img {
+  width: 40%;
+}
+.friendliest .container .img img {
+  width: 100%;
+}
+.friendliest .container .img .info {
+  padding: 20px;
+  width: 300px;
+  background-color: #ffc400;
+  border-radius: 20px;
+  position: absolute;
+  left: -15%;
+  top: 47%;
+}
+.friendliest .container .img .info .pic {
+  width: 100px;
+  margin-bottom: 30px;
+}
+.friendliest .container .img .info .pic img {
+  width: 100%;
+}
+.friendliest .container .img .info p {
+  font-size: 20px;
+  line-height: 2;
+}
+/* End Frindliest */
+/* Start Call Us */
+.call-us {
+  background-image: url(../assets/8116\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.call-us .container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.call-us .container .text h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.call-us .container .text p {
+  font-size: 19px;
+  max-width: 70%;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+/* End Call Us */
+/* Start Solar Kits */
+.solar-kits .container .text {
+  padding: 50px;
+  text-align: center;
+}
+.solar-kits .container .text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.solar-kits .container .text p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.solar-kits .container .card-box,
+.energy .container {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.solar-kits .container .card-box .card {
+  background-color: #fff;
+  box-shadow: 0 0 5px #c4c4c4;
+  width: 359px;
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.solar-kits .container .card-box .card:hover,
+.energy .container .card-tall .card:hover {
+  translate: 0 -15px;
+}
+.solar-kits .container .card-box .card .img {
+  overflow: hidden;
+  width: 100%;
+}
+.solar-kits .container .card-box .card .img img {
+  transition: 0.4s;
+  width: 100%;
+}
+.solar-kits .container .card-box .card:hover img {
+  scale: 1.1;
+}
+.solar-kits .container .card-box .card .card-text {
+  padding: 10px;
+}
+.solar-kits .container .card-box .card .card-text h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin: 10px 10px 25px;
+}
+.solar-kits .container .card-box .card .card-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.solar-kits .container .card-box .card .card-text button,
+.energy .container .card-tall .card .card-text button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #009688;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+/* End Solar Kits */
+/* Start Repairs */
+.repairs {
+  margin-top: 70px;
+  background-image: url(../assets/8116\ 1\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505px;
+}
+.repairs .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.repairs .container .text {
+  width: 95%;
+  min-height: 70%;
+  background-color: #000000ba;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+}
+.repairs .container .text h2 {
+  margin: 25px;
+  font-size: 47px;
+  text-transform: capitalize;
+}
+.repairs .container .text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* End Repairs */
+/* Start Enegry */
+.energy {
+  background-color: #f8ffe7;
+}
+.energy .container {
+  padding-top: 50px;
+}
+.energy .container .text,
+.energy .container .card-tall .card {
+  width: 359px;
+}
+.energy .container .text i {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #028c7e;
+  margin-bottom: 20px;
+}
+.energy .container .text h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.energy .container .text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.energy .container .card-tall .card {
+  padding: 10px;
+  background-color: #00968713;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #19c0af;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.energy .container .card-tall .card .img {
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6e0da96;
+  padding: 30px;
+}
+.energy .container .card-tall .card .img i {
+  font-size: 40px;
+  color: gray;
+}
+.energy .container .card-tall .card .card-text h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.energy .container .card-tall .card .card-text p {
+  font-size: 18px;
+  color: gray;
+  line-height: 1.5;
+}
+.energy .container .card-tall .card .card-text button {
+  margin-top: 20px;
+}
+/* End Enegry */
+/* Start Our Values */
+.our-values .container {
+  padding: 40px 0;
+}
+.our-values .container .text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.our-values .container .text h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.our-values .container .container-card {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.our-values .container .container-card .card {
+  width: 360px;
+  background-color: #bce1dd57;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #19c0af;
+}
+.our-values .container .container-card .card i {
+  font-size: 50px;
+  color: #19c0af;
+  margin-bottom: 20px;
+}
+.our-values .container .container-card h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.our-values .container .container-card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* End Our Values */
+/* Start Slider box */
+.slider-box .container {
+  margin-top: 50px;
+  gap: 10px;
+}
+.slider-box .container .text {
+  width: 35%;
+}
+.slider-box .container .text i {
+  font-size: 60px;
+  color: #19c0af;
+  margin-bottom: 20px;
+}
+.slider-box .container .text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.slider-box .container .text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.slider-box .container .slide-container {
+  display: flex;
+  background-color: #19c0af32;
+  border-radius: 20px;
+  width: 60%;
+  overflow: hidden;
+}
+.slider-box .container .slide-container .slider {
+  display: flex;
+  transition: 0.4s;
+  justify-content: center;
+}
+.slider-box .container .slide-container .slider .content {
+  width: 690px;
+  padding: 40px 40px 20px;
+}
+.slider-box .container .slide-container .slider .content h5 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #19c0af;
+  margin-bottom: 30px;
+}
+.slider-box .container .slide-container .slider .content p {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  max-width: 80%;
+}
+.slider-box .container .slide-container .slider .content .img {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.slider-box .container .slide-container .slider .content .img .text {
+  flex: 1;
+}
+.slider-box .container .slide-container .btns {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  z-index: 111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.slider-box .container .slide-container .btns i {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.657);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* End Slider box */
+/* Start Footer */
+footer {
+  background-color: #192d37;
+}
+footer .container {
+  margin-top: 20px;
+  padding: 40px 0 20px;
+}
+footer .container .boxed {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+footer .container .boxed .text {
+  width: 47%;
+}
+footer .container .boxed .text .img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+footer .container .boxed .text .img img {
+  width: 100%;
+}
+footer .container .boxed .text ul {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+footer .container .boxed .text ul li {
+  list-style: none;
+}
+footer .container .boxed .inputs {
+  width: 40%;
+  padding-top: 26px;
+}
+footer .container .boxed .inputs p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+footer .container .boxed .inputs input {
+  background-color: #203844;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+}
+footer .container .boxed .inputs button {
+  position: absolute;
+  z-index: 111;
+  bottom: 0%;
+  right: 0;
+  background-color: #ffc400;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+footer hr {
+  width: 100%;
+  margin: 40px 0;
+  border: 1px solid #28495a;
+}
+footer .container .boxed:last-child .text ul {
+  gap: 10px;
+}
+footer .container .boxed:last-child .text ul li,
+footer .container .boxed:last-child .inputs p {
+  font-size: 15px;
+  color: #4c7c94;
+}
+footer .container .boxed:last-child .text ul li {
+  border-right: 2px solid #4c7c94;
+}
+footer .container .boxed:last-child .inputs p {
+  text-align: right;
+}
+/* End Footer */
+/* Start Btn Scroller */
+.btn-scroller {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+.svgIcon path {
+  fill: white;
+}
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+.button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  font-size: 0px;
+}
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+/* End Btn Scroller */
+@media (max-width: 1199px) {
+  .home .container .text h2 {
+    font-size: 50px;
+  }
+  .home .container .text .bar-box {
+    margin-bottom: 60px;
+  }
+  .home .container .text .buttons button {
+    width: 150px;
+  }
+  .home .container .text .buttons button:last-child {
+    width: 200px;
+  }
+  .energy .container {
+    gap: 30px 0;
+  }
+  .energy .container .text {
+    width: 100%;
+  }
+  .energy .container .text h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    height: 80px;
+  }
+  header .container .logo img {
+    width: 45px;
+    height: 45px;
+  }
+  header .container nav .spans {
+    display: flex;
+  }
+  header .container nav {
+    flex: 0;
+  }
+  header .container nav .call {
+    display: none;
+  }
+  header .container nav ul {
+    position: fixed;
+    left: -100%;
+    top: 0%;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #009688;
+    z-index: 1000;
+    gap: 20px;
+    padding: 15px;
+    transition: 0.3s;
+  }
+  header .container nav ul.show {
+    left: 0;
+  }
+  header .container nav ul li,
+  header .container nav ul li.active {
+    background-color: #028c7e;
+    width: 100%;
+    border: none;
+  }
+  header .container nav ul .close {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .home {
+    margin-top: 80px;
+  }
+  .home .container {
+    height: calc(100vh - 80px);
+  }
+  .home .container {
+    justify-content: center;
+  }
+  .home .container .text {
+    width: 100%;
+    text-align: center;
+  }
+  .home .container .text .bar-box {
+    margin-left: 0;
+  }
+  .home .container .text .bar-box .bar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .home .container .text h2 {
+    font-size: 35px;
+  }
+  .home .container .text p {
+    font-size: 17px;
+    text-align: center;
+  }
+  .home .container .text .buttons {
+    justify-content: center;
+  }
+  .home .container .text .bar-box .bar::before {
+    left: -10%;
+  }
+  .home .container .text .bar-box .bar::after {
+    content: "04";
+    right: -10%;
+  }
+  .friendliest .container {
+    flex-direction: column;
+  }
+  .friendliest .container .text,
+  .friendliest .container .img {
+    width: 100%;
+    padding: 15px;
+  }
+  .friendliest .container .img .info {
+    display: none;
+  }
+  .slider-box .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .slider-box .container .text {
+    width: 100%;
+  }
+  .slider-box .container .slide-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .friendliest .container .text h2 {
+    font-size: 25px;
+  }
+  .friendliest .container .text p {
+    font-size: 15px;
+  }
+  .friendliest .container .text .boxed h2 {
+    font-size: 17px;
+  }
+  .home {
+    background-position: center;
+  }
+  .home .container .text h2 {
+    font-size: 28px;
+  }
+  .home .container .text p {
+    font-size: 15px;
+  }
+  .home .container .text .buttons button {
+    padding: 15px;
+    font-size: 13px;
+    width: 120px;
+  }
+  .home .container .text .buttons button:last-child {
+    width: 150px;
+  }
+  .call-us .container .text {
+    text-align: center;
+  }
+  .call-us .container .text h2 {
+    font-size: 30px;
+  }
+  .call-us .container .text p {
+    max-width: 100%;
+  }
+  .solar-kits .container .card-box .card {
+    width: 100%;
+  }
+  .repairs .container .text h2 {
+    font-size: 27px;
+    margin: 30px 5px;
+  }
+  .repairs .container .text p {
+    font-size: 18px;
+  }
+  .slider-box .container .text h2 {
+    font-size: 25px;
+  }
+  footer .container .boxed {
+    flex-direction: column;
+    padding: 10px;
+  }
+  footer .container .boxed .text,
+  footer .container .boxed .inputs {
+    width: 100%;
+  }
+  footer .container .boxed .text ul li {
+    font-size: 12px;
+  }
+  footer .container .boxed:last-child .inputs p {
+    text-align: left;
+  }
+  footer .container .boxed:last-child .text ul li {
+    padding: 0 5px 0 0;
+    font-size: 12px;
+  }
+}
+@media (max-width: 740px) {
+  .energy .container .card-tall .card {
+    width: 100%;
+  }
+}
+@media (max-width: 729px) {
+  .our-values .container .container-card {
+    padding: 10px;
+  }
+  .our-values .container .container-card .card {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .slider-box .container .slide-container .slider .content .img {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .slider-box .container .slide-container .btns {
+    bottom: 19%;
+    right: 10%;
+  }
+  .slider-box .container .slide-container .slider .content p {
+    font-size: 17px;
+    max-width: 50%;
+  }
+}
+/* Start Media */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Media */
